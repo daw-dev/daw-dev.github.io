@@ -1,0 +1,23 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+
+$color-mode-type: media-query;
+
+// LIGHT MODE
+$body-bg: $white;
+
+// DARK MODE
+$body-bg-dark: $black;
+
+// FONT
+$font-family-base: "Cascadia Code";
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: local("Cascadia Code"),
+    url("../fonts/CascadiaCode.woff2") format("woff2"),
+    url("../fonts/CascadiaCode.ttf") format("truetype");
+}
+
+@import "bootstrap";
