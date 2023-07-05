@@ -1,17 +1,8 @@
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/mixins";
-
-// LIGHT MODE
-$body-bg: $white;
-
-// DARK MODE
-@include color-mode(dark) {
-  $body-bg: $black;
-  $theme-colors: (
-    "primary": green
-  );
-}
+$primary: #0eee;
+$secondary: #299;
+$success: #2f0;
+$danger: #b20;
+$warning: #fc4;
 
 // FONT
 $font-family-base: "Cascadia Code";
