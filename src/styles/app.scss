@@ -14,4 +14,30 @@ $font-family-base: "Cascadia Code";
     url("../fonts/CascadiaCode.ttf") format("truetype");
 }
 
+// THEME CHOOSER
+.theme-chooser {
+  gap: .5rem;
+}
+
+.theme-icon {
+  opacity: 0;
+  transition: translate 500ms, rotate 500ms;
+}
+
+.theme-icon.sun {
+  translate: calc(100% + .5rem);
+  rotate: 360deg;
+}
+
+.theme-icon.moon {
+  translate: calc(-100% - .5rem);
+  rotate: -360deg;
+}
+
+.theme-icon.active {
+  opacity: 1;
+  translate: 0px;
+  rotate: 0deg;
+}
+
 @import "bootstrap";
