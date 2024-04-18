@@ -5,7 +5,11 @@ $danger: #b20;
 $warning: #fc4;
 
 // FONT
-$font-family-base: "Cascadia Code";
+$font-family-base: system-ui, sans-serif;
+
+.mono {
+  font-family: "Cascadia Code", monospace;
+}
 
 @font-face {
   font-family: "Cascadia Code";
@@ -16,7 +20,7 @@ $font-family-base: "Cascadia Code";
 
 // THEME CHOOSER
 .theme-chooser {
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .theme-icon {
@@ -25,12 +29,12 @@ $font-family-base: "Cascadia Code";
 }
 
 .theme-icon.sun {
-  translate: calc(100% + .5rem);
+  translate: calc(100% + 0.5rem);
   rotate: 360deg;
 }
 
 .theme-icon.moon {
-  translate: calc(-100% - .5rem);
+  translate: calc(-100% - 0.5rem);
   rotate: -360deg;
 }
 
